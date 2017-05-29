@@ -28,12 +28,19 @@
 </head>
 <body class="page-template page-template-onecolumn-page page-template-onecolumn-page-php page page-id-15 desktop chrome">
 <ul class="navigation">
+	<?php 
+		$menuargs = array(
+			"theme_location" => "primary",
+			"menu_class" => "s-menu",
+			"menu_id" => "main-menu",
+		);
+		$items = wp_get_nav_menu_items( 'main-menu', $menuargs); 
+	?> 
+
 	<li class="nav-item"><?php the_custom_logo(); ?></li>
-    <li class="nav-item"><a href="#">Home</a></li>
-    <li class="nav-item"><a href="#">Portfolio</a></li>
-    <li class="nav-item"><a href="#">About</a></li>
-    <li class="nav-item"><a href="#">Blog</a></li>
-    <li class="nav-item"><a href="#">Contact</a></li>
+	<?php foreach( $items as $item ){ ?>
+   		<li class="nav-item"><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+    <?php } ?>	
 </ul>
 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
 <div class="site-wrap">

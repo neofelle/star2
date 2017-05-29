@@ -1,12 +1,7 @@
 <section class="footer">
     <div class="container footer-container" style="padding-top: 45px;padding-bottom: 45px;">
-        <div class="col-sm-4 no-space left">
-            <h4 class="color-black bold uppercase title">Flat Fee Movers</h4>
-            <h4 class="color-gray uppercase">2080 Rose st,</h4>
-            <h4 class="color-gray uppercase">Sarasota, FL 34239</h4>
-            <h4 class="color-gray uppercase">941-229-1138</h4>
-            <h4 class="color-gray uppercase"><a href="#" class="color-gray">http://flatfeemovers.net/</a></h4>
-        </div>
+        <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('home-1') ) : ?>
+        <?php endif; ?>
         <div class="col-sm-4 no-space left">
             <h4 class="color-black bold uppercase title">Services</h4>
             <?php 
@@ -23,21 +18,8 @@
           
         </div>
         <div class="col-sm-4 no-space left">
-            <h4 class="color-black bold uppercase title">Follow us</h4>
-            <div class="col-md-12 no-space icons">
-              <div class="col-xs-3 col-sm-2 col-md-2 left no-space social-icons">
-                <a href="#"><img style="width: 100%;height: 100%;max-height: 45px;max-width: 45px;" src="<?php echo get_template_directory_uri() . "/assets/images/footer/facebook.png"; ?>""></a> 
-              </div>
-              <div class="col-xs-5 col-sm-2 col-md-2 left no-space social-icons">
-                <a href="#"><img style="width: 100%;height: 100%;max-height: 45px;max-width: 45px;" src="<?php echo get_template_directory_uri() . "/assets/images/footer/twitter.png"; ?>"></a>  
-              </div>
-              <div class="col-xs-3 col-sm-2 col-md-2 left no-space social-icons">
-                <a href="#"><img style="width: 100%;height: 100%;max-height: 45px;max-width: 45px;" src="<?php echo get_template_directory_uri() . "/assets/images/footer/linked-in.png"; ?>"></a>  
-              </div>
-              <div class="col-xs-3 col-sm-2 col-md-2 left no-space social-icons">
-                <a href="#"><img style="width: 100%;height: 100%;max-height: 45px;max-width: 45px;" src="<?php echo get_template_directory_uri() . "/assets/images/footer/google-plus.png"; ?>"></a>  
-              </div>
-            </div>
+            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('home-2') ) : ?>
+            <?php endif; ?>
         </div>
     </div>
 </section>

@@ -164,7 +164,7 @@ body {
     list-style: none !important;
     font-size: 24px;
     float: left;
-    width: 16%;
+    width: 16.2%;
     text-align: center;
 }
 .menu-header > li:hover {
@@ -414,14 +414,18 @@ img.cover-service{
     margin: 15px;
     box-shadow: 1px 3px 39px rgba(136, 136, 136, 0.48);
 }
-.service-block > h2{
+.service-block > a > h2{
     font-size: 32px;
     font-weight: 900;
     margin-bottom: 5px; 
+    height: 60px;
 }
-.service-block > p{
+.service-block > a > p{
     text-align: justify;
-    padding: 30px;
+    padding-left: 30px;
+    padding-top:30px;
+    padding-right: 30px;
+    height: 180px;
 }
 .service-area{
     margin-left: 13%;
@@ -627,7 +631,7 @@ img.cover-service{
   .service-container > .col-md-4 {
       width: 28.333333%;    
   }
-  .service-block > h2 {
+  .service-block > a > h2 {
       font-size: 25px;
       font-weight: 900;
       margin-bottom: 5px;
@@ -637,7 +641,7 @@ img.cover-service{
     .service-container > .col-md-4{
         width: 28.333333%;
     }
-    .service-block > h2 {
+    .service-block > a > h2 {
         font-size: 22px;
         font-weight: 900;
         margin-bottom: 5px;
@@ -649,7 +653,7 @@ img.cover-service{
     .service-container > .col-md-4{
         width: 45%;
     }
-    .service-block > h2 {
+    .service-block > a > h2 {
         font-size: 22px;
         font-weight: 900;
         margin-bottom: 5px;

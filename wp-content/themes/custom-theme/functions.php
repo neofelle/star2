@@ -347,7 +347,7 @@ function twentyseventeen_widgets_init() {
 		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h1 class="bold color-white center default">',
+		'before_title'  => '<h1 class="hidden">',
 		'after_title'   => '</h1>',
 	) );
 
