@@ -1,3 +1,9 @@
+<!-- Modal Form -->
+<div class="form-home" style='display:none'>
+    <div id='inline_content' style='padding:10px; background:#fff;'>
+       <?php echo do_shortcode( '[contact-form-7 id="90" title="form-home"]' ); ?>
+    </div>
+</div>
 <section class="footer">
     <div class="container footer-container" style="padding-top: 45px;padding-bottom: 45px;">
         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('home-1') ) : ?>
@@ -25,7 +31,7 @@
 </section>
 <section class="logo-footer" style="background-color: black;">
     <div class="container bottom-footer" style="padding-top: 45px;padding-bottom: 45px;"> 
-        <div class="col-sm-6 left footer" style="border-right: 2px solid white;">
+        <div class="col-sm-6 left footer logo-footer" style="border-right: 2px solid white;">
             <a href="<?php echo get_option('home'); ?>" style="width: 100%; display: block;text-align: right;">
                 <?php the_custom_logo(); ?>
             </a>
@@ -51,8 +57,10 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="<?php bloginfo('template_directory'); ?>/assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/assets/js/owl.carousel.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/js/jquery.colorbox-min.js"></script>
 <script>
   $(document).ready(function() {
+    $(".inline").colorbox({inline:true, width:"95%", maxWidth:'600px'});
     $('.owl-1').owlCarousel({
       items: 1,
       loop: true,

@@ -18,7 +18,39 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
+.input-form-text{
+    width: 100%;
+    font-size: 15px;
+    padding-left: 5px;
+}
+#cboxLoadedContent,#inline_content {
+    background-color: #e6e6e6 !important; /* Add a color of your choice */
+}
+div#cboxContent {
+    background: none !important;
+}
 
+label.form-label {
+    width: 100%;
+    padding: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+input.wpcf7-form-control.wpcf7-submit {
+    background-color: #c42026;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    width: 100%;
+    border: 0;
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
 article,
 aside,
 details,
@@ -493,6 +525,11 @@ img.cover-service{
         width: 100% !important;
         text-align: center;
     }
+    .footer-container > section > div.textwidget > .col-sm-4{
+        margin-bottom: 30px !important;
+        width: 100% !important;
+        text-align: center;
+    }
     .icons{
         width: 50% !important;
         margin: 0 auto !important;
@@ -560,6 +597,9 @@ img.cover-service{
 }
 /* Mobile Phone Layout */
 @media (max-width: 480px) {
+    .bottom-footer > .col-sm-6 {
+      width: 50% !important;
+    }
     .b-2{
        margin-bottom: 64px !important;
     }
@@ -618,6 +658,17 @@ img.cover-service{
     }
 }
 @media (max-width: 400px) {
+    .b-2{
+       margin-bottom: 64px !important;
+    }
+    .bottom-footer > .logo-footer {
+      width: 40% !important;
+    }
+    .bottom-footer > .contact-footer {
+      width: 60% !important;
+    }
+}
+@media (max-width: 380px) {
     .b-2{
        margin-bottom: 64px !important;
     }

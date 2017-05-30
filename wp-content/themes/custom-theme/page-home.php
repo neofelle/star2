@@ -21,14 +21,14 @@ Template Name: Homepage
                             <div class="col-xs-12 center banner">
                                 <img class="cover" style="max-width: 220px;margin: 0 auto;margin-bottom: 20px;" src="<?php echo get_template_directory_uri() . "/assets/images/homepage/banner-icon.png"; ?>">
                                 <h2 class="b-2">Get a Free Moving Estimate</h2>
-                                <a class="color-white" href="#">CLICK HERE</a>
+                                <a class="color-white inline" href="#inline_content">CLICK HERE</a>
                             </div>
                        </div>
                        <div class="col-xs-6 left">
                             <div class="col-xs-12 center banner">
                                 <img class="cover" style="max-width: 220px;margin: 0 auto;margin-bottom: 20px;" src="<?php echo get_template_directory_uri() . "/assets/images/homepage/banner-icon-2.png"; ?>">
                                 <h2>Setup an In-House Home Estimate</h2>
-                                <a class="color-white" href="#">CLICK HERE</a>
+                                <a class="color-white inline" href="#inline_content">CLICK HERE</a>
                             </div>
                        </div>
                     </div>
